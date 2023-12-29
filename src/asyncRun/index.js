@@ -19,9 +19,7 @@ export const asyncRun = (() => {
             node.nodeValue = "1"
         }
     }
-    else {
-        return (func) => {
-            setTimeout(func)
-        }
+    return (func) => {
+        setTimeout(func)
     }
 })()
